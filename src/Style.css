@@ -1,0 +1,128 @@
+* {
+  background-color: rgb(30, 30, 30);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+.nav-bar {
+  position: absolute;
+  background-color: rgb(20, 20, 20);
+  height: 3rem;
+  width: 100%;
+}
+
+.nav-bar h3 {
+  display: inline-block;
+  background-color: rgb(20, 20, 20);
+  margin: 10px 30px 10px 30px;
+}
+
+.game-showcase {
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+}
+
+.fade-overlay {
+  position: absolute;
+  background: radial-gradient(rgba(100, 100, 100, 0.5), rgba(10, 10, 10, 0.9));
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.background-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.background-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.game-section {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+}
+.photos {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  top: 20%;
+  width: 896px;
+  height: 504px;
+}
+
+.photos .slide-fade {
+  display: inline-block;
+  height: 504px;
+  width: 896px;
+}
+
+.photos .slide-fade img {
+  height: 504px;
+  width: 896px;
+}
+
+.dot-container .dot {
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  top: 20%;
+  width: 896px;
+  height: 504px;
+}
+
+.description {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 50%;
+  height: 100%;
+  left: 50%;
+}
+
+.description p,
+.description h1 {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.description button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-right: auto;
+  font-size: 48px;
+  width: 210px;
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid rgb(40, 104, 94);
+  background: linear-gradient(rgb(46, 66, 80), rgb(7, 18, 48));
+}
+
+.description button:hover {
+  background: linear-gradient(rgb(41, 59, 75), rgb(6, 9, 20));
+}
