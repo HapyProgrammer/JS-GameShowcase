@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Images from "./components/ImagePack";
 import GameDisplay from "./GameDisplay.jsx";
+import { Link } from "react-scroll";
 import "./Style.css";
 
 class App extends Component {
@@ -128,7 +129,20 @@ class App extends Component {
     this.state.games.forEach(element => {
       const keystring = "title" + element.key.toString();
       const gameSection = <GameDisplay games={element} key={element.key} />;
-      const navElement = <h3 key={keystring}>{element.title}</h3>;
+      const navElement = (
+        <Link
+          className="link"
+          key={keystring}
+          activeClass="active"
+          to={element.title}
+          spy={true}
+          smooth={true}
+          offset={-60}
+          duration={100}
+        >
+          <h3>{element.title}</h3>
+        </Link>
+      );
       gameSections.push(gameSection);
       navTitles.push(navElement);
     });

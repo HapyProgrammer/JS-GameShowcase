@@ -31,7 +31,7 @@ class GameDisplay extends Component {
 
   render() {
     return (
-      <div className="game-section">
+      <div className="game-section" id={this.props.games.title}>
         <div className="background-container">
           <img src={this.props.games.images[0]} alt="background" />
           <div className="fade-overlay" />
